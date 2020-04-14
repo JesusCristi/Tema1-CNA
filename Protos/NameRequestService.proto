@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "NameRequest.proto";
+
+option csharp_namespace = "Generated";
+
+service NameRequestService
+{
+	rpc OutputName(Name) returns (EmptyMessage);
+}
